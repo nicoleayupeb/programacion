@@ -1,0 +1,30 @@
+//Sueldo Neto
+//Objetivo:Calcular el sueldo en funcion a las horas trabajadas
+//Autores: Nicole Ayupe y Marco Michel
+
+#include"stdafx.h"        //Libreria: Visual C++ studio
+#include<iostream>        //Libreria: Para manejar la entrada y el getch()
+#include"conio.h"         //Libreria: Entrada y salida cin cout
+
+using namespace std;      //Es para que el teclado sirva para ingresar datos y el monitos para mostrar
+
+
+void main()              //Cuerpo principal del programa
+{                        //Inicio del programa
+   int a, b, c, h;       //Declaracion de variables en entero
+   float sueldo;         //Declaracion de variables en decimales
+   float i;              //Declaracion de variables en decimales
+   cout << "Ingrese el numero de empleados: " << endl;  //Ingreso de dato con mensaje y sulicitud de datos
+   cin >> a;                                            //Lectura de dato
+   for (h=1;h<=a;h++)                                   //Es un ciclo repetitivo
+   {                                                    //Incio del for
+     cout << "Ingrese las horas trabajadas: " << endl;  //Ingreso de dato con mensaje y sulicitud de datos
+     cin >> b;                                          //Lectura  de dato
+     cout << "Ingrese el pago por hora: " << endl;      //Ingreso de dato con mensaje y sulicitud de datos
+     cin >> c;                                          //Lectura de dato
+     i = 0.13;                                          //Asignacion de valor a i    
+     sueldo = (c*b)-((c*b)*i);                          //Calculo del sueldo neto 
+     cout << "El sueldo es: " << sueldo << endl;        //Muestra de resultado (Sueldo neto)
+   }                                                    //Fin del for 
+   getch();                                             //Detiene el programa para que la pantalla no se cierre automaticamente 
+}                                                       //Fin del programa 
