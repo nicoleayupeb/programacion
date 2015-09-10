@@ -1,0 +1,22 @@
+// Condicional.cpp : Defines the entry point for the console application.
+//Autor: Nicole Ayupe Bascope
+//Fecha: 10/10/15
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{ 
+    int e;
+	cout<<"Ingrese la edad : ";
+	cin>> e;
+	if (e>=18)
+		cout<<"Puede votar";
+	else
+		cout<<"No puede votar";
+
+	getch();
+}
