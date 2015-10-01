@@ -1,0 +1,31 @@
+// Impuesto.h
+//Autor: Nicole Ayupe Bascope
+//Fecha: 01/10/12
+
+#include "Stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int n,i;
+	float iva,sueldo,suma=0,sueldomin;
+	cout<<"Ingrese el numero de personas que desea calcular sus impuestos:";
+	cin>>n;
+	sueldomin=(2*1656);
+	for (i=1;i<=n;i++)
+	{	cout<<"Ingrese su cantidad de sueldo:"<<i<<": ";
+	    cin>>sueldo;
+		iva=0;
+		 if (sueldo>sueldomin)
+			 iva= sueldo*0.13;
+		     cout<<"El impuesto a pagar es:"<<i<<": "<<iva<<endl;
+			 suma=suma+iva;
+	}
+	    
+    cout<<"El impuestototal a pagar es: "<<suma<<endl;
+
+	getch();
+}
