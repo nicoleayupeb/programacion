@@ -1,6 +1,6 @@
 // asdf.cpp : Defines the entry point for the console application.
-//Integrantes: Jorge Paz,Thalia simsovic, nicole ayupe
-#include "stdafx.h"
+//Integrantes: Jorge Paz,Thalia simsovic, nicole ayupe, fabiana eguez
+
 #include <iostream>
 #include "stdlib.h"
 #include "stdio.h"
@@ -31,7 +31,7 @@ int funcion()
 do{
 srand (time(NULL));
 for (int x=0;x<1;x++){
-numero = (1 + rand()) % 6;
+numero = ((1 + rand()) % 6);
 }
 }while(numero == 0);
 return (numero);
@@ -106,104 +106,75 @@ int preguntasvideojuegos()
      {case 0:
        do{
           cout<<"\n Cual es el personaje principal de Mario Bros? \n 1-Mario \n 2-Luigi \n 3-Princesa Peach \n";   
-		 cin>>opc;
-		 if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
+		  cin>>opc;
          }while(opc<1||opc>3);
        if(opc==1)
          {cout<<"CORRECTO";
-	  R=1;}
+	   R=1;}
        else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break; 
      case 1:
        do{
           cout<<"\n Cuantos fantasmas hay en el juego Pacman Clasico? \n 1- 3 fantasmas \n 2- 6 fantasmas \n 3- 4 fantasmas \n";   
           cin>>opc; 
-		 if (opc == 1)
-		 {}
-          else
-            {opc = 0;
-		    fflush (stdin);}
+		  
          }while(opc<1||opc>3);
        if(opc==3)
          {cout<<"CORRECTO";
-	  R=1;}
+	   R=1;}
        else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break; 
      case 2:
        do{
           cout<<"\n Del juego 'Sonic the hedgehog' que color es Sonic? \n 1- Amarillo \n 2- Azul \n 3- Naranja \n";   
           cin>>opc; 
-		 if ( opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
-         }while(opc<1||opc>3);
+		  }while(opc<1||opc>3);
        if(opc==2)
          {cout<<"CORRECTO";
-	  R=1;}
+	   R=1;}
        else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break;
-	  case 3:
+	   case 3:
        do{
           cout<<"\n Cual es el personaje principal de Legend of Zelda? \n 1-Link \n 2-Princesa Zelda \n 3-Princesa Link \n";   
-		 cin>>opc;
-		 if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
-         }while(opc<1||opc>3);
+		  cin>>opc;
+		  }while(opc<1||opc>3);
        if(opc==1)
          {cout<<"CORRECTO";
-	  R=1;}
+	   R=1;}
        else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break; 
      case 4:
        do{
           cout<<"\n A que compania pertenece la saga de consolas play station? \n 1- Windows \n 2- Samsung \n 3- Sony \n";   
           cin>>opc; 
-		 if (opc== 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
-         }while(opc<1||opc>3);
+		  }while(opc<1||opc>3);
        if(opc==3)
          {cout<<"CORRECTO";
-	  R=1;}
+	   R=1;}
        else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break; 
      case 5:
        do{
           cout<<"\n Que arrojaba Donkey Kong en el videojuego Donkey Kong Country? \n 1- Bananas \n 2- Barriles \n 3- Cocos \n";   
           cin>>opc; 
-		 if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
-         }while(opc<1||opc>3);
+		 }while(opc<1||opc>3);
        if(opc==2)
          {cout<<"CORRECTO";
-	  R=1;}
-       else
+	   R=1;}
+       else 
          {cout<<"INCORRECTO";
-	  R=0;}
+	   R=0;}
        break;
     }
 resultados=1;
@@ -222,11 +193,6 @@ int preguntasmatematicas()
 do{
 cout<<"\n Que triangulo tienen sus tres lados iguales? \n 1- T.Rectangulo \n 2- T.Equilatero \n 3- T.Isosceles \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
@@ -237,13 +203,8 @@ R=0;}
 break; 
 case 1:
 do{
-cout<<"\n Cuanto es factorial de 7? \n 1- 5040 \n 2- 5400 \n 3- 5004 \n";
+cout<<"\n Cuanto es factorial de 7? \n 1- 5040 \n 2- 5400 \n 3- 5004 \n";   
 cin>>opc; 
-if (opc== 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -256,11 +217,6 @@ case 2:
 do{
 cout<<"\n Cuantas figuras conicas existen? \n 1- tres \n 2- seis \n 3- cuatro \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==3)
 {cout<<"CORRECTO";
@@ -273,11 +229,6 @@ case 3:
 do{
 cout<<"\n Que teorema se aplica en la resolucion de triangulos rectangulos? \n 1- T.de los senos \n 2- Pitagoras \n 3- T.de los cosenos \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
@@ -285,16 +236,11 @@ R=1;}
 else 
 {cout<<"INCORRECTO";
 R=0;}
-break;
+break; 
 case 4:
 do{
 cout<<"\n Cuantos tipos de soluciones puede tener una ecuacion cuadratica? \n 1- Tres \n 2- cinco \n 3- dos \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -307,11 +253,6 @@ case 5:
 do{
 cout<<"\n Cuanto mide la suma de los angulos internos de un triangulo? \n 1- 90 grados \n 2- Depende del triangulo \n 3- 180 grados \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==3)
 {cout<<"CORRECTO";
@@ -337,11 +278,6 @@ int preguntaspsicologia()
 do{
 cout<<"\n Quien es el padre del psicoanalisis? \n 1- Simpson \n 2- Freud \n 3- Pavlov \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
@@ -354,11 +290,6 @@ case 1:
 do{
 cout<<"\n En cuantas fases esta dividida la piramide de Maslow? \n 1- Cinco \n 2- Seis \n 3- Tres \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -371,11 +302,6 @@ case 2:
 do{
 cout<<"\n Quien es el padre psicologia? \n 1- Wilhem Wundt \n 2- Sigmund Freud \n 3- Ivan Pavlov \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -388,11 +314,6 @@ case 3:
 do{
 cout<<"\n Quien es el padre del conductismo? \n 1- Skinner \n 2- J. Watson \n 3- Kantor \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
@@ -405,11 +326,6 @@ case 4:
 do{
 cout<<"\n Cuantos tipos de inteligencia existen segun Howard Gardner? \n 1- Ocho \n 2- cinco \n 3- Dos \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -422,11 +338,6 @@ case 5:
 do{
 cout<<"\n Como se llamo la hija de Sigmund Freud, que centro su investigacion en la psicologia infantil? \n 1- Anna Freud \n 2- Virginia Freud \n 3- Mathilde Freud \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -450,13 +361,8 @@ int preguntasUpsa()
  switch (Np)
 {case 0:
 do{
-cout<<"\n Cuando fue fundada la Upsa? \n 1- 12 de Marzo de 1984 \n 2- 12 de Mayo de 1984 \n 3- 12 de Febrero de 1984 \n";
+cout<<"\n Cuando fue fundada la Upsa? \n 1- 12 de Marzo de 1984 \n 2- 12 de Mayo de 1984 \n 3- 12 de Febrero de 1984 \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -468,12 +374,7 @@ break;
 case 1:
 do{
 cout<<"\n Cual de estos docentes no da la materia F.de matematicas? \n 1- Simoni \n 2- Bojanic \n 3- Arce \n";   
-cin>>opc;
-if (opc== 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
+cin>>opc; 
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -485,12 +386,7 @@ break;
 case 2:
 do{
 cout<<"\n Cual sanitario es el mas sucio de la Upsa? \n 1- El de Hombres \n 2- El de Mujeres \n 3- El de Docentes \n";   
-cin>>opc;
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);};
+cin>>opc; 
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
@@ -501,13 +397,8 @@ R=0;}
 break;
 case 3:
 do{
-cout<<"\n Cuantas Facultades tiene la Upsa? \n 1- Cinco \n 2- Cuatro \n 3- Seis \n";
+cout<<"\n Cuantas Facultades tiene la Upsa? \n 1- Cinco \n 2- Cuatro \n 3- Seis \n";   
 cin>>opc; 
-if (opc== 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -520,11 +411,6 @@ case 4:
 do{
 cout<<"\n Cuantas carreras ofrecia la universidad al momento de su fundacion? \n 1- Cuatro \n 2- Diez \n 3- Ocho \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -532,21 +418,16 @@ R=1;}
 else 
 {cout<<"INCORRECTO";
 R=0;}
-break;
+break; 
 case 5:
 do{
 cout<<"\n Cuantas carreras tiene actualmente la UPSA? \n 1- Veinte \n 2- Veintidos \n 3- Diecinueve \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);};
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
 R=1;}
-else
+else 
 {cout<<"INCORRECTO";
 R=0;}
 break;
@@ -566,12 +447,7 @@ int preguntasmusica()
 {case 0:
 do{
 cout<<"\n Cuantos integrantes conformaban 'The Beatles'? \n 1- Cuatro \n 2- Cinco \n 3- Tres \n";   
-cin>>opc;
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
+cin>>opc; 
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -584,11 +460,6 @@ case 1:
 do{
 cout<<"\n De que color era la piel de Michael Jackson? \n 1- Negra \n 2- Blanca \n 3- Canelita pasion \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -600,17 +471,12 @@ break;
 case 2:
 do{
 cout<<"\n Cual es el artista mas conocido de Santa Cruz? \n 1- Guisela Santa Cruz \n 2- Gladys Moreno \n 3- Los Cambitas \n";   
-cin>>opc;
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
+cin>>opc; 
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
 R=1;}
-else
+else 
 {cout<<"INCORRECTO";
 R=0;}
 break; 
@@ -618,28 +484,18 @@ case 3:
 do{
 cout<<"\n Quien es considerado 'El rey del rock'n roll? \n 1- Elvis Presley \n 2- Paul McCartney \n 3- Jhon Lennon \n";   
 cin>>opc;
-if (opc == 1)
-		 {}
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
 R=1;}
-else
+else 
 {cout<<"INCORRECTO";
 R=0;}
 break; 
 case 4:
 do{
 cout<<"\n A que familia de instrumentos pertenece la flauta? \n 1- Viento \n 2- Percusion \n 3- De cuerdas \n";   
-cin>>opc;
-if (opc== 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
+cin>>opc; 
 }while(opc<1||opc>3);
 if(opc==1)
 {cout<<"CORRECTO";
@@ -650,18 +506,13 @@ R=0;}
 break; 
 case 5:
 do{
-cout<<"\n Cuantas notas tiene una escala musical pentatonica? \n 1- Seis \n 2- Cinco \n 3- No existe esa escala \n";
+cout<<"\n Cuantas notas tiene una escala musical pentatonica? \n 1- Seis \n 2- Cinco \n 3- No existe esa escala \n";   
 cin>>opc; 
-if (opc == 1)
-		 {}     
-          else
-            {opc = 0;
-		    fflush (stdin);}
 }while(opc<1||opc>3);
 if(opc==2)
 {cout<<"CORRECTO";
 R=1;}
-else
+else 
 {cout<<"INCORRECTO";
 R=0;}
 break;
@@ -671,3 +522,4 @@ getch();
 return (R);
 }
 }
+		    
